@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rambabusaravanan.texticon.example.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/message"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <com.rambabusaravanan.TextIcon
+                android:text="@string/ic_filter_1"
+                android:id="@+id/icon_1"
+                style="@style/text_icon" />
+
+            <com.rambabusaravanan.TextIcon
+                android:text="@string/ic_filter_2"
+                android:id="@+id/icon_2"
+                style="@style/text_icon" />
+
+            <com.rambabusaravanan.TextIcon
+                android:text="@string/ic_filter_3"
+                android:id="@+id/icon_3"
+                style="@style/text_icon" />
+
+            <com.rambabusaravanan.TextIcon
+                android:text="@string/ic_filter_4"
+                android:id="@+id/icon_4"
+                style="@style/text_icon" />
+
+            <com.rambabusaravanan.TextIcon
+                android:text="@string/ic_filter_5"
+                android:id="@+id/icon_5"
+                style="@style/text_icon" />
+
+            <com.rambabusaravanan.TextIcon
+                android:text="@string/ic_filter_6"
+                android:id="@+id/icon_6"
+                style="@style/text_icon" />
+
+            <com.rambabusaravanan.TextIcon
+                android:text="@string/ic_filter_7"
+                android:id="@+id/icon_7"
+                style="@style/text_icon" />
+
+            <com.rambabusaravanan.TextIcon
+                android:text="@string/ic_filter_8"
+                android:id="@+id/icon_8"
+                style="@style/text_icon" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="@string/abc_search_hint"
+            android:singleLine="true"
+            android:textColor="@color/colorAccent" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:scrollbars="vertical" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/credit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:textColor="#AAA"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/credit"
+        android:textSize="11sp" />
+</RelativeLayout>

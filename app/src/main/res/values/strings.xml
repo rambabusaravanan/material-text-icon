@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Text Icon Example</string>
+    <string name="message">Tired of downloading every Material Icon images into every drawable folder. It\'s now made simple as a Text widget with a single font ..</string>
+    <string name="credit">Brought to you by (Andro Babu) rambabusaravanan</string>
+</resources>
